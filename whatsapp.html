@@ -1,0 +1,89 @@
+<!doctype html><html><head> 
+  <title>
+        Whatsapp  
+      </title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&amp;display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/f6e5490a48.js" crossorigin="anonymous"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">  
+</script> 
+  <meta charset="UTF-8"> 
+  <meta name="description" content="Whatsapp"> 
+  <meta name="keywords" content="HTML, CSS, JavaScript"> 
+  <meta name="author" content="Abdul Rahman"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <style type="text/css" id="dcoder_stylesheet">body{
+  //background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEXcwUsIGoy-SM0EWk0GceQAPPt-px7D2QZasgieE&s=01" );
+background-color:#EEEBE6;
+}
+h1{
+  text-align:center;
+  color:white;
+  background-color:#075E55;
+  padding:15px;
+  margin-top:-5px;
+  border-radius:10px;
+}
+#button{
+background-color:#20C65A;
+border-radius:15px;
+color:white;
+margin-right:35%;
+padding-left:25px;
+padding-top:5px;
+padding-bottom:5px;
+margin-left:27%;
+border-style:solid;
+border-color:#075E55;
+
+}
+#n1{
+text-align:center;
+border-radius:25px;
+border-type:solid;
+margin-left:20%;
+padding:10px;
+Outline:none;
+font-family:Red Hat Display,sans-serif;
+}
+#link{
+text-decoration:none;
+color:white;
+font-family:Red Hat Display,sans-serif;
+}
+h4{
+  font-family:Red Hat Display,sans-serif;
+  
+}
+#link:hover{
+color:black;
+}
+#n1:hover{
+padding-left:40px;
+padding-right:40px;
+}</style></head> 
+ <body> 
+  <h1><i class="fab fa-whatsapp"></i> Whatsapp</h1> 
+  <h4> No need to save contact to send message in whatsapp, Here is a Few steps; 
+   <ol id="center"> 
+    <li>Enter the WhatsApp number </li> 
+    <li>Click the Chat Button</li> 
+   </ol> </h4> 
+  <div class="b"> 
+   <input type="number" id="n1" placeholder="Enter Whatsapp number"> 
+  </div> 
+  <br> 
+  <div id="button"> 
+   <a id="link" href="#" target="_blank">Chat Now</a> 
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">alert("Run this code in Chorme For better Experience");
+
+$("input#n1").on("change", function(){ // Whenever this field changes
+
+  var n1 = $("input#n1").val(); // Get the value of the field
+  
+  $("a#link").attr("href", "https://wa.me/91" + n1); // Update the href in the link to match the id inserted in the input field
+  
+});</script></body></html>
